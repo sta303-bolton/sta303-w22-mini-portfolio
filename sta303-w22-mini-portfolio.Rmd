@@ -1,0 +1,172 @@
+---
+title: "STA303/1002 Mini-portfolio"
+subtitle: "An exploration of data wrangling, visualization, hypothesis testing and writing skills"
+author: "[Your name here]"
+date: 2022-02-03
+lang: "en"
+output:
+ pdf_document:
+  template: template.tex
+  toc: true
+  toc_depth: 2
+titlepage: true
+titlepage-color: "6C3082"
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "FFFFFF"
+titlepage-rule-height: 2
+urlcolor: blue
+linkcolor: black
+---
+
+```{r, message = FALSE, echo=FALSE}
+library(tidyverse)
+#install.packages("kableExtra")
+#install.packages("sysfonts")
+library(kableExtra)
+```
+
+\listoffigures
+
+\newpage
+
+# Introduction
+
+I'm baby edison bulb freegan ugh poutine williamsburg tumblr, sartorial microdosing twee before they sold out selfies schlitz snackwave affogato four dollar toast. Heirloom art party vegan, tacos chartreuse celiac kinfolk kickstarter wolf leggings sustainable. Jean shorts chicharrones bushwick, jianbing copper mug beard 8-bit helvetica XOXO snackwave letterpress. Lo-fi 8-bit brooklyn normcore activated charcoal, direct trade skateboard pop-up tousled bicycle rights poutine pickled beard lomo next level.
+
+Vice readymade you probably haven't heard of them seitan gluten-free man braid. Plaid farm-to-table banjo pinterest skateboard raw denim post-ironic mixtape man bun. Woke fixie distillery intelligentsia chambray normcore selfies lomo copper mug microdosing affogato four loko. Four loko cred adaptogen mumblecore offal af. XOXO woke forage portland. Pour-over enamel pin subway tile shabby chic. Edison bulb gluten-free snackwave kogi +1 sustainable.
+
+Pok pok waistcoat next level raclette readymade. Seitan synth jianbing mlkshk godard gastropub. Blog pitchfork tilde hammock cold-pressed, prism listicle. Meggings hell of sriracha vice hammock marfa semiotics, post-ironic literally unicorn williamsburg. Viral tacos poutine, tilde letterpress mlkshk salvia hell of single-origin coffee polaroid forage master cleanse. Poke copper mug banh mi, selfies enamel pin gochujang seitan fanny pack knausgaard cliche gastropub kickstarter vaporware green juice iceland.
+
+Poutine pabst echo park woke skateboard shabby chic synth trust fund cray etsy. Glossier humblebrag cliche activated charcoal ennui. Meditation hot chicken lo-fi heirloom four loko wolf butcher yr. Tbh stumptown gastropub enamel pin woke tilde sustainable iPhone VHS. Whatever yr meh meditation YOLO gochujang.
+
+\newpage
+
+# Statistical skills sample
+
+## Setting up libraries
+
+```{r}
+# An example of a comment that you can delete, 
+# as well as some code you can delete
+2+2
+```
+
+## Visualizing the variance of a Binomial random variable for varying proportions
+
+```{r, fig.height=3, fig.cap="Your text here"}
+# A filler plot that has NOTHING to do with what you need to do in the assessment
+# Delete!
+tibble(delete_this = rnorm(100, 10), dont_include_it = rnorm(100, 2)) %>% 
+  ggplot(aes(x = delete_this, y = dont_include_it)) +
+  geom_point() +
+  theme_minimal()
+```
+
+```{r, fig.height=3, fig.cap="Your text here"}
+# Another filler plot that has NOTHING to do with what you need to do in the assessment
+# Delete!
+tibble(delete_this = rnorm(100, 10), dont_include_it = rnorm(100, 2)) %>% 
+  ggplot(aes(x = delete_this, y = dont_include_it)) +
+  geom_point() +
+  theme_minimal()
+```
+
+\newpage
+
+## Demonstrating frequentist confidence intervals as long-run probabilities of capturing a population parameter
+
+```{r, fig.width=9, fig.height=11, fig.cap = "Exploring our long-run 'confidence' in confidence intervals. This figure shows how often 95% confidence intervals from 100 simple random samples capture the population mean. The population was simulated from N(10, 2)"}
+
+# This filler plot will be a different size (delete!)
+tibble(delete_this = rnorm(100, 10), dont_include_it = rnorm(100, 2)) %>% 
+  ggplot(aes(x = delete_this, y = dont_include_it)) +
+  geom_point() +
+  theme_minimal()
+
+```
+
+Bespoke raclette wayfarers sustainable pork belly, vice activated charcoal succulents marfa. Yuccie flannel bushwick, messenger bag cardigan shoreditch man bun next level. Chillwave plaid ethical, godard pabst hashtag bushwick pitchfork taxidermy raw denim. Austin mlkshk taiyaki brooklyn kale chips, vape sustainable woke literally meh ugh four loko 90's bespoke.
+
+## Investigating whether there is an association between cGPA and STA303/1002 students correctly answering a question on global poverty rates
+
+### Goal
+
+Mustache 3 wolf moon helvetica, fixie organic tote bag everyday carry plaid prism try-hard street art hella vegan af. Tacos XOXO distillery, fam scenester activated charcoal 8-bit chambray YOLO sriracha helvetica unicorn vaporware messenger bag. Subway tile adaptogen tattooed prism marfa vexillologist tofu live-edge PBR&B iceland hammock banh mi seitan hell of.
+
+### Wrangling the data
+
+```{r}
+# Wrangle! (delete this comment)
+```
+
+### Visualizing the data
+
+```{r, fig.height=7}
+# Visualize! (delete this comment)
+# And here is yet another filler plot that has NOTHING to do with what you 
+# need to do in the assessment
+tibble(delete_this = rnorm(100, 10), dont_include_it = rnorm(100, 2)) %>% 
+  ggplot(aes(x = delete_this, y = dont_include_it)) +
+  geom_point() +
+  theme_minimal()
+```
+
+### Testing
+
+Vice kale chips knausgaard, blog tumblr tattooed brooklyn austin copper mug succulents offal trust fund. Twee helvetica sustainable, biodiesel meggings pop-up irony knausgaard tousled franzen fingerstache leggings kale chips. Swag health goth iceland, squid listicle lomo microdosing 3 wolf moon yr 8-bit post-ironic. Succulents bicycle rights 3 wolf moon hot chicken kickstarter synth hell of, poutine celiac tbh tacos tousled pabst pour-over VHS. Kickstarter single-origin coffee cliche, meggings synth health goth occupy cronut readymade lomo blog swag stumptown messenger bag cred. Gochujang organic keytar la croix, cold-pressed venmo squid kickstarter drinking vinegar cornhole cardigan YOLO photo booth hammock paleo.
+
+```{r}
+# Test! (delete this comment)
+```
+
+Chillwave plaid ethical, godard pabst hashtag bushwick pitchfork taxidermy raw denim. Austin mlkshk taiyaki brooklyn kale chips, vape sustainable woke literally meh ugh four loko 90's bespoke. Bespoke raclette wayfarers sustainable pork belly, vice activated charcoal succulents marfa. Yuccie flannel bushwick, messenger bag cardigan shoreditch man bun next level.
+
+\newpage
+
+# Writing sample
+
+### Introduction
+
+Vice readymade you probably haven't heard of them seitan gluten-free man braid. Plaid farm-to-table banjo pinterest skateboard raw denim post-ironic mixtape man bun. Woke fixie distillery intelligentsia chambray normcore selfies lomo copper mug microdosing affogato four loko. Four loko cred adaptogen mumblecore offal af. XOXO woke forage portland. Pour-over enamel pin subway tile shabby chic. Edison bulb gluten-free snackwave kogi +1 sustainable.
+
+### Soft skills
+
+I'm baby bushwick four loko swag messenger bag sustainable VHS. Brunch activated charcoal pop-up, swag typewriter waistcoat vaporware flannel keytar wayfarers +1 kogi hexagon tote bag. Marfa freegan PBR&B, schlitz taxidermy gochujang unicorn YOLO art party lomo organic poke typewriter pabst listicle. VHS air plant man braid, vexillologist letterpress iceland microdosing la croix 3 wolf moon artisan swag lo-fi kickstarter vinyl.
+
+Adaptogen helvetica meditation iPhone hella whatever, intelligentsia kogi synth cred schlitz affogato actually. Portland asymmetrical semiotics street art, master cleanse edison bulb skateboard cronut twee next level distillery photo booth af swag live-edge. Tofu distillery kale chips aesthetic thundercats lumbersexual, cornhole pabst vegan salvia four loko. Swag meh pork belly, ramps fam green juice taiyaki. Hexagon waistcoat taxidermy DIY YOLO. Yuccie af man braid you probably haven't heard of them, farm-to-table irony vice taiyaki deep v.
+
+### Analytic skills
+
+Banjo ramps kogi shaman air plant gastropub. You probably haven't heard of them vexillologist craft beer food truck VHS ramps bitters street art woke. Photo booth yr irony, meditation squid pabst blue bottle leggings selfies offal chicharrones fixie banh mi forage helvetica. Artisan narwhal before they sold out, actually sartorial occupy trust fund lumbersexual cloud bread bicycle rights man bun slow-carb.
+
+Schlitz swag ethical mixtape, bicycle rights blog gentrify mumblecore yr semiotics distillery venmo fashion axe fingerstache hexagon. Chicharrones tote bag authentic squid farm-to-table organic glossier lomo. Deep v tbh poke typewriter la croix. Tofu umami sartorial green juice truffaut cred tumblr butcher selfies readymade post-ironic. Skateboard VHS artisan squid, tumeric affogato craft beer blue bottle palo santo occupy ugh quinoa.
+
+### Connection to studies
+
+Organic actually echo park man bun banjo YOLO meggings. Vexillologist banh mi chicharrones, humblebrag pinterest pour-over drinking vinegar occupy kombucha tbh butcher. Marfa hella bespoke, hexagon deep v pork belly coloring book affogato church-key listicle. Keytar crucifix jean shorts slow-carb normcore, pour-over hammock synth literally live-edge neutra edison bulb vegan. Organic woke pinterest flannel bushwick. Woke distillery trust fund pok pok lomo blue bottle jean shorts snackwave marfa.
+
+### Conclusion
+
+Food truck biodiesel mixtape tote bag, pork belly fanny pack lo-fi iceland coloring book godard williamsburg ugh adaptogen squid blue bottle. Viral 90's succulents sartorial authentic offal marfa chicharrones. Pour-over hashtag farm-to-table portland. Af typewriter vice cray. Synth squid portland ennui franzen hell of man bun cornhole, blog viral palo santo fingerstache chartreuse. Literally deep v brooklyn taxidermy humblebrag venmo chambray. Live-edge leggings hella affogato fashion axe food truck meditation.
+
+**Word count:** 467 words
+
+\newpage
+
+# Reflection
+
+### What is something specific that I am proud of in this mini-portfolio?
+
+Affogato mustache iceland PBR&B lomo stumptown. Wayfarers pop-up food truck tofu, asymmetrical pabst mustache direct trade. Cred hoodie try-hard man bun blog cronut, poke sriracha brunch pour-over aesthetic sartorial trust fund kombucha narwhal. Pickled poutine post-ironic deep v ennui aesthetic biodiesel. Stumptown DIY franzen gentrify aesthetic, jianbing lumbersexual banjo lyft cornhole iceland.
+
+### How might I apply what I've learned and demonstrated in this mini-portfolio in future work and study, after STA303/1002?
+
+Shabby chic hammock whatever, leggings 3 wolf moon brunch aesthetic food truck art party gluten-free humblebrag blog tofu chartreuse glossier. Flannel selvage crucifix hoodie mlkshk. DIY viral forage post-ironic roof party leggings unicorn chia pour-over. Chartreuse swag food truck jean shorts aesthetic. Readymade photo booth actually art party quinoa. Ennui pour-over vape, biodiesel copper mug humblebrag microdosing ethical VHS.
+
+### What is something I'd do differently next time?
+
+Put a bird on it taxidermy tattooed vegan gochujang heirloom. Kombucha offal vinyl disrupt truffaut mixtape whatever wayfarers. Pinterest meh wolf, fashion axe readymade cloud bread XOXO narwhal poke tilde tattooed ramps photo booth meditation tbh. Actually intelligentsia hella yr.
+
+Sustainable direct trade man bun organic franzen forage. Crucifix swag woke man braid. Kitsch street art vexillologist tacos hoodie ramps four dollar toast disrupt edison bulb live-edge 8-bit cornhole lyft blue bottle. Synth mumblecore flexitarian poutine.
+
+All filler text sourced from: [Hipster Ipsum](https://hipsum.co/)

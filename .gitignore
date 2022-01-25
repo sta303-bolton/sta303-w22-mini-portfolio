@@ -1,8 +1,9 @@
-.gitignore
-
 *
 
+/data/*
+.gitignore
+
 !/data/*
-!sta303-w220-mini-portfolio.Rmd
+!sta303-w22-mini-portfolio.Rmd
 !instructions.pdf
 !template.tex
