@@ -3,3 +3,9 @@
 .RData
 .Ruserdata
 answers/
+
+*
+
+!data/
+!sta303-w220mini-portfolio.Rmd
+!instructions.pdf
