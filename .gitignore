@@ -1,12 +1,6 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-answers/
-
 *
 
-!data
+!data/sta303-mini-portfolio-poverty.xlsx
 !sta303-w220-mini-portfolio.Rmd
 !instructions.pdf
 !template.tex
