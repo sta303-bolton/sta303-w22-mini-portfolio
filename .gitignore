@@ -1,6 +1,8 @@
+.gitignore
+
 *
 
-!data/sta303-mini-portfolio-poverty.xlsx
+!/data/*
 !sta303-w220-mini-portfolio.Rmd
 !instructions.pdf
 !template.tex
