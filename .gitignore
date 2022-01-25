@@ -1,7 +1,6 @@
-*
-/data/
+/*
 
-!/data/
+!/data
 !sta303-w22-mini-portfolio.Rmd
 !instructions.pdf
 !template.tex
