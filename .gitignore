@@ -6,6 +6,7 @@ answers/
 
 *
 
-!data/
-!sta303-w220mini-portfolio.Rmd
+!data
+!sta303-w220-mini-portfolio.Rmd
 !instructions.pdf
+!template.tex
