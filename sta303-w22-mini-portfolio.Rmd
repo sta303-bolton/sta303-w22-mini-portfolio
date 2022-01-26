@@ -18,11 +18,9 @@ urlcolor: blue
 linkcolor: black
 ---
 
-```{r, message = FALSE, echo=FALSE}
+```{r, message=FALSE}
+# delete this chunk and follow instructions
 library(tidyverse)
-#install.packages("kableExtra")
-#install.packages("sysfonts")
-library(kableExtra)
 ```
 
 \listoffigures
